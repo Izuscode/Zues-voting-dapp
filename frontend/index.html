@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Voting DApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Voting DApp</h1>
+
+    <button id="connectButton">Connect Wallet</button>
+
+    <div id="eventSection">
+      <label for="eventIdInput">Event ID:</label>
+      <input type="number" id="eventIdInput" value="1" min="1" />
+      <button id="loadCandidatesBtn">Load Candidates</button>
+    </div>
+
+    <div id="candidates"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
